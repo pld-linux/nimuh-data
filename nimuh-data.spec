@@ -1,12 +1,13 @@
 %define	_name	nimuh
 Summary:	Nimuh is a game ambiented in Andalusia
+Summary(pl.UTF-8):	Nimuh jest grą o Andaluzji
 Name:		%{_name}-data
-Version:	1.0
-Release:	0.1
+Version:	1.02
+Release:	0.2
 License:	Creative Commons
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/nimuh/%{name}-%{version}.tar.gz
-# Source0-md5:	f71e242d6a06d6dd769b7cd141be1453
+# Source0-md5:	ae5d0bc6e49a8b989ce6d0b3421bf948
 URL:		http://www.nimuh.com/index.php?lang=en
 Requires:	%{_name} = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -17,6 +18,10 @@ the Minotaur Mazes" that will go through different andalusian
 locations.
 
 This package contains Nimuh data files.
+
+%description -l pl.UTF-8
+
+Ten pakiet zawiera dane do gry Nimuh.
 
 %prep
 %setup -q
